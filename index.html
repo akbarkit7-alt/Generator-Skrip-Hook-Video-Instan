@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generator Skrip & Hook Video Instan — AkbarKit PRO</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+    body { background-color: #090d16; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
+    header { background-color: #0f172a; border-bottom: 1px solid #1e293b; padding: 14px 16px; position: sticky; top: 0; z-index: 10; }
+    .nav-wrap { max-width: 460px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
+    .brand { display: flex; align-items: center; gap: 8px; }
+    .logo-badge { background: #10b981; color: #020617; font-weight: 800; padding: 4px 9px; border-radius: 8px; font-size: 13px; }
+    .brand-title { font-weight: 700; font-size: 17px; }
+    .pro-badge { background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fbbf24; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 6px; margin-left: 4px; text-transform: uppercase; }
+    .nav-btn { font-size: 12px; background: #1e293b; border: 1px solid #334155; color: #34d399; padding: 6px 12px; border-radius: 99px; text-decoration: none; font-weight: 600; }
+    main { max-width: 460px; width: 100%; margin: 0 auto; padding: 20px 16px; display: flex; flex-direction: column; gap: 18px; }
+    .hero { text-align: center; }
+    .hero h2 { font-size: 21px; font-weight: 800; line-height: 1.25; margin-bottom: 6px; }
+    .hero p { font-size: 13px; color: #94a3b8; line-height: 1.4; }
+    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
+    label { display: block; font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+    input, select, textarea { width: 100%; background: #020617; border: 1px solid #334155; border-radius: 12px; padding: 12px 14px; color: #ffffff; font-size: 14px; font-weight: 500; outline: none; }
+    input:focus, select:focus, textarea:focus { border-color: #10b981; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .btn-primary { width: 100%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: #020617; font-weight: 800; font-size: 15px; padding: 14px; border: none; border-radius: 12px; cursor: pointer; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); }
+    .btn-primary:active { transform: scale(0.98); }
+    .api-toggle { font-size: 12px; color: #38bdf8; cursor: pointer; text-align: right; text-decoration: underline; }
+    .api-box { display: none; background: #020617; border: 1px dashed #334155; padding: 12px; border-radius: 12px; }
+    .result-section { display: flex; flex-direction: column; gap: 14px; }
+    .script-card { background: #0f172a; border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
+    .script-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 8px; }
+    .script-tag { font-size: 11px; font-weight: 800; color: #34d399; text-transform: uppercase; }
+    .btn-copy { background: #1e293b; border: 1px solid #334155; color: #f8fafc; font-size: 11px; font-weight: 700; padding: 5px 10px; border-radius: 8px; cursor: pointer; }
+    .btn-copy.copied { background: #10b981; color: #020617; border-color: #10b981; }
+    .script-body { font-size: 13.5px; line-height: 1.55; color: #e2e8f0; white-space: pre-line; }
+    .highlight { color: #fbbf24; font-weight: 700; }
+    footer { text-align: center; padding: 16px; font-size: 12px; color: #64748b; border-top: 1px solid #0f172a; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-wrap">
+      <div class="brand">
+        <span class="logo-badge">AK</span>
+        <div class="brand-title">AkbarKit <span class="pro-badge">PRO</span></div>
+      </div>
+      <a href="https://pages.dev" target="_blank" class="nav-btn">Kalkulator Cuan &rarr;</a>
+    </div>
+  </header>
+
+  <main>
+    <div class="hero">
+      <h2>Generator Skrip & Hook Video Instan</h2>
+      <p>Buat 3 variasi skrip TikTok, Shopee Video, Reels & Shorts siap rekam dalam 3 detik.</p>
+    </div>
+
+    <div class="card">
+      <div>
+        <label>Nama Produk / Barang yang Dipromosikan</label>
+        <input type="text" id="namaProduk" placeholder="Contoh: Serum Niacinamide / Kipas Mini Turbo" />
+      </div>
+
+      <div>
+        <label>Masalah Utama yang Diselesaikan Produk</label>
+        <input type="text" id="masalahProduk" placeholder="Contoh: wajah kusam & bekas jerawat / gerah saat di luar" />
+      </div>
+
+      <div class="grid-2">
+        <div>
+          <label>Kategori Produk</label>
+          <select id="kategori">
+            <option value="skincare">Skincare & Kecantikan</option>
+            <option value="fashion">Fashion & OOTD</option>
+            <option value="gadget">Gadget & Elektronik</option>
+            <option value="rumah">Perlengkapan Rumah</option>
+            <option value="digital">Produk Digital / Edukasi</option>
+          </select>
+        </div>
+        <div>
+          <label>Gaya Penyampaian</label>
+          <select id="gaya">
+            <option value="jujur">Review Jujur / Racun</option>
+            <option value="fomo">FOMO / Diskon Terbatas</option>
+            <option value="edukasi">Solusi Masalah Cepat</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="api-toggle" onclick="toggleApi()">+ Mode AI Pintar (Opsional: Pakai Gemini API Key)</div>
+      <div class="api-box" id="apiBox">
+        <label>Gemini API Key (Gratis dari Google AI Studio)</label>
+        <input type="password" id="geminiKey" placeholder="Tempel AIzaSy... (Kosongkan untuk Mode Instan)" />
+      </div>
+
+      <button class="btn-primary" id="btnGenerate" onclick="buatSkrip()">Buat 3 Skrip Siap Rekam Sekarang</button>
+    </div>
+
+    <div id="outputArea" class="result-section"></div>
+  </main>
+
+  <footer>
+    &copy; 2026 AkbarKit.id — Lisensi Resmi Pembeli AkbarKit PRO
+  </footer>
+
+  <script>
+    function toggleApi() {
+      const box = document.getElementById('apiBox');
+      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    }
+
+    function salinTeks(btn, elementId) {
+      const teks = document.getElementById(elementId).innerText;
+      navigator.clipboard.writeText(teks);
+      btn.innerText = 'Tersalin ✓';
+      btn.classList.add('copied');
+      setTimeout(() => {
+        btn.innerText = 'Salin Skrip';
+        btn.classList.remove('copied');
+      }, 2000);
+    }
+
+    async function buatSkrip() {
+      const produk = document.getElementById('namaProduk').value.trim() || 'Produk Viral Ini';
+      const masalah = document.getElementById('masalahProduk').value.trim() || 'masalah harian yang bikin ribet';
+      const gaya = document.getElementById('gaya').value;
+      const apiKey = document.getElementById('geminiKey').value.trim();
+      const output = document.getElementById('outputArea');
+      const btn = document.getElementById('btnGenerate');
+
+      if (apiKey) {
+        btn.innerText = 'AI Sedang Meracik Skrip...';
+        btn.disabled = true;
+        try {
+          const prompt = `Buatkan 3 variasi skrip video pendek (15-30 detik) untuk TikTok/Shopee Affiliate berbahasa Indonesia yang santai dan menjual. Produk: ${produk}. Masalah yang diatasi: ${masalah}. Gaya: ${gaya}. Pisahkan masing-masing skrip dengan tanda === dan beri label [HOOK 3 DETIK], [ISI/DEMO], dan [CTA KERANJANG].`;
+          const res = await fetch(`https://googleapis.com{apiKey}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
+          });
+          const data = await res.json();
+          const rawText = data.candidates[0].content.parts[0].text;
+          const parts = rawText.split('===').filter(p => p.trim() !== '');
+          renderCards(parts);
+          btn.innerText = 'Buat 3 Skrip Siap Rekam Sekarang';
+          btn.disabled = false;
+          return;
+        } catch (e) {
+          alert('API Key tidak valid atau limit habis, beralih ke Mode Instan bawaan.');
+          btn.innerText = 'Buat 3 Skrip Siap Rekam Sekarang';
+          btn.disabled = false;
+        }
+      }
+
+      const templates = [
+        `[HOOK 3 DETIK]\n"Stop scroll! Kalau kamu masih sering ngalamin ${masalah}, wajib banget lihat ${produk} ini sampai habis."\n\n[ISI / DEMO PRODUK]\n"Awalnya aku juga ragu, tapi pas dicoba ternyata ngaruh banget buat ngatasin ${masalah}. Praktis dipakai tiap hari dan kualitasnya di atas harganya."\n\n[CTA KERANJANG]\n"Mumpung stok promonya masih ada, langsung cek keranjang kiri bawah sebelum kehabisan!"`,
+        `[HOOK 3 DETIK]\n"Nyesel banget baru tahu ada ${produk} sepintar ini, padahal dari dulu pusing soal ${masalah}!"\n\n[ISI / DEMO PRODUK]\n"Lihat bedanya sebelum dan sesudah pakai ini. Beneran hemat waktu dan nggak perlu keluar biaya mahal lagi cuma buat urusan ${masalah}."\n\n[CTA KERANJANG]\n"Klik keranjang kuning sekarang mumpung lagi dapat potongan harga hari ini!"`,
+        `[HOOK 3 DETIK]\n"3 alasan kenapa ${produk} ini selalu ludes tiap kali restock!"\n\n[ISI / DEMO PRODUK]\n"Pertama, langsung beresin ${masalah} tanpa ribet. Kedua, awet dan gampang dibawa ke mana-mana. Ketiga, harganya ramah banget di kantong."\n\n[CTA KERANJANG]\n"Cek warna dan varian yang masih tersedia di keranjang bawah sekarang juga!"`
+      ];
+      renderCards(templates);
+    }
+
+    function renderCards(list) {
