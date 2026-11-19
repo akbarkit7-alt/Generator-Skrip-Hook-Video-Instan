@@ -3,188 +3,674 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Generator Skrip & Hook Video Instan — AkbarKit PRO</title>
+  <title>Generator Deskripsi Produk SEO Marketplace — AKBAR KIT</title>
+  <link rel="icon" type="image/png" href="logo.png" />
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
-    body { background-color: #090d16; color: #f8fafc; min-height: 100vh; display: flex; flex-direction: column; justify-content: space-between; }
-    header { background-color: #0f172a; border-bottom: 1px solid #1e293b; padding: 14px 16px; position: sticky; top: 0; z-index: 10; }
-    .nav-wrap { max-width: 460px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; }
-    .brand { display: flex; align-items: center; gap: 8px; }
-    .logo-badge { background: #10b981; color: #020617; font-weight: 800; padding: 4px 9px; border-radius: 8px; font-size: 13px; }
-    .brand-title { font-weight: 700; font-size: 17px; }
-    .pro-badge { background: rgba(245, 158, 11, 0.15); border: 1px solid rgba(245, 158, 11, 0.4); color: #fbbf24; font-size: 10px; font-weight: 800; padding: 2px 7px; border-radius: 6px; margin-left: 4px; text-transform: uppercase; }
-    .nav-btn { font-size: 12px; background: #1e293b; border: 1px solid #334155; color: #34d399; padding: 6px 12px; border-radius: 99px; text-decoration: none; font-weight: 600; }
-    main { max-width: 460px; width: 100%; margin: 0 auto; padding: 20px 16px; display: flex; flex-direction: column; gap: 18px; }
-    .hero { text-align: center; }
-    .hero h2 { font-size: 21px; font-weight: 800; line-height: 1.25; margin-bottom: 6px; }
-    .hero p { font-size: 13px; color: #94a3b8; line-height: 1.4; }
-    .card { background: #0f172a; border: 1px solid #1e293b; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 14px; box-shadow: 0 10px 25px rgba(0,0,0,0.4); }
-    label { display: block; font-size: 11px; font-weight: 700; color: #94a3b8; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
-    input, select, textarea { width: 100%; background: #020617; border: 1px solid #334155; border-radius: 12px; padding: 12px 14px; color: #ffffff; font-size: 14px; font-weight: 500; outline: none; }
-    input:focus, select:focus, textarea:focus { border-color: #10b981; }
-    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
-    .btn-primary { width: 100%; background: linear-gradient(135deg, #10b981 0%, #059669 100%); color: #020617; font-weight: 800; font-size: 15px; padding: 14px; border: none; border-radius: 12px; cursor: pointer; box-shadow: 0 4px 15px rgba(16, 185, 129, 0.3); }
-    .btn-primary:active { transform: scale(0.98); }
-    .api-toggle { font-size: 12px; color: #38bdf8; cursor: pointer; text-align: right; text-decoration: underline; }
-    .api-box { display: none; background: #020617; border: 1px dashed #334155; padding: 12px; border-radius: 12px; }
-    .result-section { display: flex; flex-direction: column; gap: 14px; margin-bottom: 30px; }
-    .script-card { background: #0f172a; border: 1px solid rgba(16, 185, 129, 0.35); border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 10px; }
-    .script-header { display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #1e293b; padding-bottom: 8px; }
-    .script-tag { font-size: 11px; font-weight: 800; color: #34d399; text-transform: uppercase; }
-    .btn-copy { background: #1e293b; border: 1px solid #334155; color: #f8fafc; font-size: 11px; font-weight: 700; padding: 5px 10px; border-radius: 8px; cursor: pointer; }
-    .btn-copy.copied { background: #10b981; color: #020617; border-color: #10b981; }
-    .script-body { font-size: 13.5px; line-height: 1.55; color: #e2e8f0; white-space: pre-line; }
-    .highlight { color: #fbbf24; font-weight: 700; }
-    footer { text-align: center; padding: 16px; font-size: 12px; color: #64748b; border-top: 1px solid #0f172a; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: #09090b;
+      color: #f4f4f5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      min-height: 100vh;
+      width: 100%;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+      line-height: 1.5;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 460px;
+      position: relative;
+      z-index: 10;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0 16px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #27272a;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      height: 36px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 6px;
+    }
+
+    .brand-title {
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.16em;
+      color: #d4af37;
+    }
+
+    .badge-free {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.35);
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 6px;
+      border-radius: 5px;
+    }
+
+    .nav-link {
+      font-size: 12px;
+      font-weight: 600;
+      text-decoration: none;
+      color: #fcd34d;
+      background: #18181b;
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      padding: 7px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 22px;
+    }
+
+    .hero h1 {
+      font-size: 21px;
+      font-weight: 800;
+      line-height: 1.3;
+      margin-bottom: 6px;
+      color: #ffffff;
+    }
+
+    .hero p {
+      font-size: 13px;
+      color: #a1a1aa;
+    }
+
+    .card {
+      background-color: #121216;
+      border: 1px solid #27272a;
+      border-radius: 18px;
+      padding: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #a1a1aa;
+      margin-bottom: 6px;
+    }
+
+    .label-hint {
+      text-transform: none;
+      letter-spacing: 0;
+      font-weight: 500;
+      color: #71717a;
+    }
+
+    input[type="text"],
+    textarea,
+    select {
+      width: 100%;
+      background-color: #18181d;
+      border: 1px solid #3f3f46;
+      color: #ffffff;
+      border-radius: 12px;
+      padding: 11px 14px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+
+    textarea {
+      min-height: 84px;
+      resize: vertical;
+      line-height: 1.45;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus,
+    select:focus {
+      outline: none;
+      border-color: #d4af37;
+    }
+
+    .preset-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+    }
+
+    .preset-btn {
+      background: #18181d;
+      border: 1px solid #3f3f46;
+      color: #e4e4e7;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 10px 6px;
+      border-radius: 10px;
+      cursor: pointer;
+      touch-action: manipulation;
+      transition: all 0.15s ease;
+    }
+
+    .preset-btn.active {
+      border-color: #d4af37;
+      background: rgba(212, 175, 55, 0.18);
+      color: #fcd34d;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      width: 100%;
+      background: linear-gradient(135deg, #f5e6b8 0%, #d4af37 50%, #b58d22 100%);
+      color: #09090b;
+      font-size: 14px;
+      font-weight: 800;
+      border: none;
+      border-radius: 12px;
+      padding: 14px;
+      cursor: pointer;
+      margin-top: 4px;
+      touch-action: manipulation;
+    }
+
+    .btn-primary:active {
+      transform: scale(0.99);
+    }
+
+    .result-section {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid #27272a;
+    }
+
+    .output-box {
+      background: #16161a;
+      border: 1px solid #27272a;
+      border-radius: 14px;
+      padding: 14px;
+      margin-bottom: 12px;
+    }
+
+    .output-box.highlight {
+      background: #18181d;
+      border-color: rgba(212, 175, 55, 0.45);
+    }
+
+    .output-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      gap: 8px;
+    }
+
+    .output-title {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: #fcd34d;
+    }
+
+    .char-count {
+      font-size: 11px;
+      color: #a1a1aa;
+    }
+
+    .char-count.warn {
+      color: #f87171;
+      font-weight: 700;
+    }
+
+    .output-text {
+      font-size: 13px;
+      color: #f4f4f5;
+      white-space: pre-line;
+      word-break: break-word;
+      margin-bottom: 10px;
+    }
+
+    .btn-copy-sm {
+      background: #222229;
+      border: 1px solid #3f3f46;
+      color: #e4e4e7;
+      font-size: 11px;
+      font-weight: 600;
+      padding: 6px 10px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .btn-copy-sm:hover {
+      border-color: #d4af37;
+      color: #fcd34d;
+    }
+
+    .btn-copy-all {
+      width: 100%;
+      background: #18181d;
+      border: 1px solid rgba(212, 175, 55, 0.5);
+      color: #fcd34d;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 12px;
+      border-radius: 12px;
+      cursor: pointer;
+      margin-bottom: 14px;
+    }
+
+    .tools-box {
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 14px;
+      padding: 14px;
+      text-align: center;
+    }
+
+    .tools-box p {
+      font-size: 12px;
+      color: #fde68a;
+      margin-bottom: 10px;
+    }
+
+    .tools-links {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .btn-tool-pro {
+      display: block;
+      text-decoration: none;
+      background: linear-gradient(135deg, #f5e6b8 0%, #d4af37 100%);
+      color: #09090b;
+      font-size: 12px;
+      font-weight: 800;
+      padding: 11px;
+      border-radius: 10px;
+    }
+
+    .btn-tool-sec {
+      display: block;
+      text-decoration: none;
+      background: #18181d;
+      border: 1px solid #3f3f46;
+      color: #e4e4e7;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%) translateY(20px);
+      background: #27272a;
+      color: #34d399;
+      border: 1px solid rgba(52, 211, 153, 0.4);
+      font-size: 12px;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 999px;
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.2s ease;
+      z-index: 99;
+    }
+
+    .toast.show {
+      opacity: 1;
+      transform: translateX(-50%) translateY(0);
+    }
+
+    footer {
+      margin-top: 24px;
+      text-align: center;
+      font-size: 11px;
+      color: #71717a;
+    }
   </style>
 </head>
 <body>
 
-  <header>
-    <div class="nav-wrap">
+  <div class="container">
+    <header>
       <div class="brand">
-        <span class="logo-badge">AK</span>
-        <div class="brand-title">AkbarKit <span class="pro-badge">PRO</span></div>
+        <img src="logo.png" alt="AKBAR KIT" onerror="this.style.display='none'" />
+        <span class="brand-title">AKBAR KIT</span>
+        <span class="badge-free">GRATIS</span>
       </div>
-      <a href="https://kalkulator-akbarkit.pages.dev" class="nav-btn">Kalkulator Cuan &rarr;</a>
-    </div>
-  </header>
+      <a href="https://pages.dev" class="nav-link">
+        Kalkulator HPP →
+      </a>
+    </header>
 
-  <main>
     <div class="hero">
-      <h2>Generator Skrip & Hook Video Instan</h2>
-      <p>Buat 3 variasi skrip TikTok, Shopee Video, Reels & Shorts siap rekam dalam 3 detik.</p>
+      <h1>Generator Deskripsi Produk SEO Marketplace</h1>
+      <p>Susun judul ramah pencarian, deskripsi rapi dengan bullet point & hashtag otomatis.</p>
     </div>
 
     <div class="card">
-      <div>
-        <label>Nama Produk / Barang yang Dipromosikan</label>
-        <input type="text" id="namaProduk" placeholder="Contoh: Indomie / Serum Niacinamide" value="Indomie" />
-      </div>
-
-      <div>
-        <label>Masalah Utama yang Diselesaikan Produk</label>
-        <input type="text" id="masalahProduk" placeholder="Contoh: Praktis dibuat / lapar malam hari" value="Praktis dibuat" />
-      </div>
-
-      <div class="grid-2">
-        <div>
-          <label>Kategori Produk</label>
-          <select id="kategori">
-            <option value="skincare">Skincare & Kecantikan</option>
-            <option value="fashion">Fashion & OOTD</option>
-            <option value="gadget">Gadget & Elektronik</option>
-            <option value="rumah" selected>Perlengkapan Rumah / Makanan</option>
-            <option value="digital">Produk Digital / Edukasi</option>
-          </select>
-        </div>
-        <div>
-          <label>Gaya Penyampaian</label>
-          <select id="gaya">
-            <option value="jujur">Review Jujur / Racun</option>
-            <option value="fomo">FOMO / Diskon Terbatas</option>
-            <option value="edukasi">Solusi Masalah Cepat</option>
-          </select>
+      <div class="form-group">
+        <label>Target Marketplace</label>
+        <div class="preset-grid">
+          <button type="button" class="preset-btn active" data-mp="shopee" onclick="setMarketplace('shopee', this)">Shopee</button>
+          <button type="button" class="preset-btn" data-mp="tiktok" onclick="setMarketplace('tiktok', this)">TikTok Shop</button>
+          <button type="button" class="preset-btn" data-mp="tokopedia" onclick="setMarketplace('tokopedia', this)">Tokopedia</button>
         </div>
       </div>
 
-      <div class="api-toggle" onclick="toggleApi()">+ Mode AI Pintar (Opsional: Pakai Gemini API Key)</div>
-      <div class="api-box" id="apiBox">
-        <label>Gemini API Key (Kosongkan jika ingin pakai Mode Instan)</label>
-        <input type="password" id="geminiKey" placeholder="Tempel AIzaSy..." />
+      <div class="form-group">
+        <label for="productName">Nama Produk Utama</label>
+        <input
+          type="text"
+          id="productName"
+          placeholder="Contoh: Tumbler Stainless Vacuum 500ml"
+          value="Tumbler Stainless Vacuum 500ml"
+          oninput="generateSEO()"
+        />
       </div>
 
-      <button class="btn-primary" id="btnGenerate" onclick="buatSkrip()">Buat 3 Skrip Siap Rekam Sekarang</button>
+      <div class="form-group">
+        <label for="benefits">Keunggulan / Spesifikasi <span class="label-hint">(pisahkan per baris atau koma)</span></label>
+        <textarea
+          id="benefits"
+          placeholder="Contoh:&#10;Tahan panas & dingin hingga 12 jam&#10;Bahan stainless steel 304 anti karat&#10;Tutup anti tumpah cocok dibawa kerja & olahraga"
+          oninput="generateSEO()"
+        >Tahan panas & dingin hingga 12 jam
+Bahan stainless steel 304 anti karat
+Tutup anti tumpah cocok dibawa kerja & olahraga
+Ukuran pas di cup holder mobil & tas</textarea>
+      </div>
+
+      <div class="form-group grid-2">
+        <div>
+          <label for="targetBuyer">Target Pembeli</label>
+          <input
+            type="text"
+            id="targetBuyer"
+            placeholder="Contoh: pekerja kantoran, mahasiswa"
+            value="pekerja kantoran, mahasiswa & traveler"
+            oninput="generateSEO()"
+          />
+        </div>
+        <div>
+          <label for="tone">Gaya Bahasa</label>
+          <select id="tone" onchange="generateSEO()">
+            <option value="persuasif" selected>Persuasif & Jelas</option>
+            <option value="ramah">Ramah & Santai</option>
+            <option value="profesional">Profesional & Detail</option>
+          </select>
+        </div>
+      </div>
+
+      <button type="button" class="btn-primary" onclick="generateSEO()">
+        Generate Judul & Deskripsi SEO
+      </button>
+
+      <div class="result-section" id="resultSection">
+        <div class="output-box highlight">
+          <div class="output-header">
+            <span class="output-title">Rekomendasi Judul SEO</span>
+            <span class="char-count" id="titleCounter">0 / 120 kar</span>
+          </div>
+          <div class="output-text" id="outTitle"></div>
+          <button type="button" class="btn-copy-sm" onclick="copyById('outTitle', 'Judul SEO disalin')">
+            Salin Judul
+          </button>
+        </div>
+
+        <div class="output-box">
+          <div class="output-header">
+            <span class="output-title">Deskripsi Produk (Siap Tempel)</span>
+            <span class="char-count" id="descCounter">0 kar</span>
+          </div>
+          <div class="output-text" id="outDesc"></div>
+          <button type="button" class="btn-copy-sm" onclick="copyById('outDesc', 'Deskripsi disalin')">
+            Salin Deskripsi
+          </button>
+        </div>
+
+        <div class="output-box">
+          <div class="output-header">
+            <span class="output-title">Hashtag Relevan</span>
+            <span class="char-count" id="tagCounter">0 tag</span>
+          </div>
+          <div class="output-text" id="outTags"></div>
+          <button type="button" class="btn-copy-sm" onclick="copyById('outTags', 'Hashtag disalin')">
+            Salin Hashtag
+          </button>
+        </div>
+
+        <button type="button" class="btn-copy-all" onclick="copyAllOutput()">
+          Salin Judul + Deskripsi + Hashtag Sekaligus
+        </button>
+
+        <div class="tools-box">
+          <p>Sudah susun deskripsi? Pastikan harga jual & margin tetap aman!</p>
+          <div class="tools-links">
+            <a href="https://pages.dev" class="btn-tool-pro">Buka Kalkulator HPP & Harga Jual →</a>
+            <a href="https://pages.dev" class="btn-tool-sec">Lihat Semua Tools UMKM AKBAR KIT</a>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div id="outputArea" class="result-section"></div>
-  </main>
+    <footer>
+      &copy; 2026 AKBAR KIT. Alat bantu optimasi toko UMKM Indonesia.
+    </footer>
+  </div>
 
-  <footer>
-    &copy; 2026 AkbarKit.id — Lisensi Resmi Pembeli AkbarKit PRO
-  </footer>
+  <div class="toast" id="toast">Tersalin ke clipboard</div>
 
   <script>
-    function toggleApi() {
-      const box = document.getElementById('apiBox');
-      box.style.display = box.style.display === 'block' ? 'none' : 'block';
+    let selectedMarketplace = "shopee";
+
+    const mpConfig = {
+      shopee: {
+        label: "Shopee",
+        maxTitle: 120,
+        titleSuffix: "Original Awet Murah Berkualitas",
+        cta: "Checkout sekarang sebelum kehabisan stok! Chat admin jika butuh info tambahan."
+      },
+      tiktok: {
+        label: "TikTok Shop",
+        maxTitle: 100,
+        titleSuffix: "Wajib Punya Best Seller Viral",
+        cta: "Klik keranjang kuning sekarang & manfaatkan promo toko hari ini!"
+      },
+      tokopedia: {
+        label: "Tokopedia",
+        maxTitle: 120,
+        titleSuffix: "Terbaru Bergaransi Pengiriman Aman",
+        cta: "Pesanan diproses cepat dengan packing aman. Silakan chat kami bila ada pertanyaan."
+      }
+    };
+
+    function setMarketplace(mp, btnElement) {
+      selectedMarketplace = mp;
+      document.querySelectorAll(".preset-btn").forEach((btn) => {
+        btn.classList.remove("active");
+      });
+      if (btnElement) {
+        btnElement.classList.add("active");
+      }
+      generateSEO();
     }
 
-    function salinTeks(btn, elementId) {
-      const teks = document.getElementById(elementId).innerText;
-      navigator.clipboard.writeText(teks);
-      btn.innerText = 'Tersalin ✓';
-      btn.classList.add('copied');
-      setTimeout(() => {
-        btn.innerText = 'Salin Skrip';
-        btn.classList.remove('copied');
-      }, 2000);
+    function parseList(rawText) {
+      return rawText
+        .split(/[\n,]+/)
+        .map((item) => item.replace(/^[-•*▪▪︎\d.)]+\s*/, "").trim())
+        .filter(Boolean);
     }
 
-    async function buatSkrip() {
-      const produk = document.getElementById('namaProduk').value.trim() || 'Produk Ini';
-      const masalah = document.getElementById('masalahProduk').value.trim() || 'masalah harian';
-      const apiKey = document.getElementById('geminiKey').value.trim();
-      const btn = document.getElementById('btnGenerate');
-
-      // Jika pengguna memasukkan API Key Gemini
-      if (apiKey) {
-        btn.innerText = 'AI Sedang Meracik Skrip...';
-        btn.disabled = true;
-        try {
-          const prompt = `Buatkan 3 variasi skrip video pendek (15-30 detik) untuk TikTok/Shopee Affiliate berbahasa Indonesia yang santai dan menjual. Produk: ${produk}. Masalah yang diatasi: ${masalah}. Pisahkan masing-masing skrip dengan tanda === dan beri label [HOOK 3 DETIK], [ISI/DEMO], dan [CTA KERANJANG].`;
-          const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`, {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ contents: [{ parts: [{ text: prompt }] }] })
-          });
-          const data = await res.json();
-          const rawText = data.candidates[0].content.parts[0].text;
-          const parts = rawText.split('===').map(p => p.trim()).filter(p => p !== '');
-          renderCards(parts);
-          btn.innerText = 'Buat 3 Skrip Siap Rekam Sekarang';
-          btn.disabled = false;
-          return;
-        } catch (e) {
-          // Jika gagal/invalid, otomatis fallback ke mode instan di bawah
+    function fitTitleLength(parts, maxLen) {
+      let title = "";
+      for (const part of parts) {
+        const cleanPart = part.trim();
+        if (!cleanPart) continue;
+        const candidate = title ? `${title} ${cleanPart}` : cleanPart;
+        if (candidate.length <= maxLen) {
+          title = candidate;
+        } else {
+          const remaining = maxLen - title.length - 1;
+          if (remaining > 8) {
+            const trimmed = cleanPart.slice(0, remaining).replace(/\s+\S*$/, "");
+            if (trimmed) {
+              title = title ? `${title} ${trimmed}` : trimmed;
+            }
+          }
+          break;
         }
       }
-
-      // Mode Instan Bawaan (Langsung Jalan Tanpa API Key)
-      btn.innerText = 'Meracik Skrip...';
-      setTimeout(() => {
-        const templates = [
-          `[HOOK 3 DETIK]\n"Stop scroll! Buat kamu yang nyari yang ${masalah}, wajib banget stok ${produk} ini di rumah."\n\n[ISI / DEMO PRODUK]\n"Selain rasanya enak dan beneran ${masalah}, proses bikinnya nggak ada 3 menit. Cocok banget buat anak kos atau pas lagi lapar mendadak."\n\n[CTA KERANJANG]\n"Yuk langsung cek keranjang kuning sekarang sebelum stoknya habis!"`,
-          `[HOOK 3 DETIK]\n"Penyelamat lapar paling gercep ya ${produk} ini, bener-bener solusi pas lagi ${masalah}!"\n\n[ISI / DEMO PRODUK]\n"Teksturnya pas, bumbunya mantap, dan praktis banget disiapin kapan pun. Nggak heran jadi menu andalan tiap tanggal tua."\n\n[CTA KERANJANG]\n"Klik keranjang di bawah buat ambil promo paket hematnya hari ini!"`,
-          `[HOOK 3 DETIK]\n"3 alasan kenapa ${produk} nggak pernah sepi peminat dan selalu jadi juara kalau lagi ${masalah}!"\n\n[ISI / DEMO PRODUK]\n"Pertama, super praktis. Kedua, porsinya pas. Ketiga, harganya ramah banget di kantong pelajar maupun pekerja."\n\n[CTA KERANJANG]\n"Langsung amankan varian favoritmu di keranjang kuning sekarang juga!"`
-        ];
-        renderCards(templates);
-        btn.innerText = 'Buat 3 Skrip Siap Rekam Sekarang';
-      }, 400);
+      return title;
     }
 
-    function renderCards(list) {
-      const output = document.getElementById('outputArea');
-      output.innerHTML = '';
+    function buildHashtags(productName, benefits, targetBuyer, mp) {
+      const stopWords = new Set([
+        "dan", "atau", "yang", "untuk", "dengan", "di", "ke", "dari", "pada",
+        "saat", "bisa", "lebih", "sangat", "anti", "ada", "serta", "juga",
+        "hingga", "dalam", "produk", "barang", "murah", "bagus", "terbaik"
+      ]);
 
-      list.forEach((skrip, index) => {
-        const formattedText = skrip.replace(/(\[.*?\])/g, '<span class="highlight">$1</span>');
-        const cardId = `skrip-${index}`;
+      const rawWords = `${productName} ${benefits.join(" ")} ${targetBuyer}`
+        .toLowerCase()
+        .replace(/[^a-z0-9\s]/g, " ")
+        .split(/\s+/)
+        .filter((w) => w.length >= 3 && !stopWords.has(w));
 
-        const card = document.createElement('div');
-        card.className = 'script-card';
-        card.innerHTML = `
-          <div class="script-header">
-            <span class="script-tag">Variasi Skrip #${index + 1}</span>
-            <button class="btn-copy" onclick="salinTeks(this, '${cardId}')">Salin Skrip</button>
-          </div>
-          <div class="script-body" id="${cardId}">${formattedText}</div>
-        `;
-        output.appendChild(card);
-      });
+      const uniqueWords = [...new Set(rawWords)].slice(0, 7);
+      const tags = uniqueWords.map((w) => `#${w}`);
 
-      output.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      const mpTag = mp === "tiktok" ? "#racuntiktok" : mp === "tokopedia" ? "#tokopedia" : "#shopeehaul";
+      tags.push("#rekomendasiproduk", "#produkukmk", mpTag);
+
+      return [...new Set(tags)].slice(0, 10);
     }
+
+    function generateSEO() {
+      const nameInput = document.getElementById("productName").value.trim() || "Produk Pilihan";
+      const benefitsRaw = document.getElementById("benefits").value;
+      const buyerRaw = document.getElementById("targetBuyer").value.trim();
+      const tone = document.getElementById("tone").value;
+
+      const benefits = parseList(benefitsRaw);
+      const safeBenefits = benefits.length > 0 ? benefits : ["Kualitas terjamin untuk pemakaian harian", "Desain fungsional dan praktis"];
+      const cfg = mpConfig[selectedMarketplace];
+
+      const topBenefit = safeBenefits[0] || "";
+      const title = fitTitleLength([nameInput, topBenefit, cfg.titleSuffix], cfg.maxTitle);
+
+      let opening = "";
+      if (tone === "ramah") {
+        opening = `Hai Kak! Lagi cari ${nameInput.toLowerCase()} yang nyaman dipakai sehari-hari? Produk ini siap nemenin aktivitas kamu.`;
+      } else if (tone === "profesional") {
+        opening = `${nameInput} dirancang untuk memberikan performa andal, kepraktisan penggunaan, serta nilai fungsional optimal bagi pengguna.`;
+      } else {
+        opening = `Butuh ${nameInput.toLowerCase()} yang benar-benar kepake dan awet? Ini pilihan tepat untuk upgrade kebutuhan harianmu.`;
+      }
+
+      const bullets = safeBenefits.map((b) => `• ${b}`).join("\n");
+      const buyerLine = buyerRaw
+        ? `\n\nCocok untuk:\n• ${parseList(buyerRaw).join("\n• ")}`
+        : "";
+
+      const description = `${opening}\n\nKeunggulan Produk:\n${bullets}${buyerLine}\n\n${cfg.cta}`;
+
+      const tags = buildHashtags(nameInput, safeBenefits, buyerRaw, selectedMarketplace);
+      const tagsText = tags.join(" ");
+
+      document.getElementById("outTitle").textContent = title;
+      document.getElementById("outDesc").textContent = description;
+      document.getElementById("outTags").textContent = tagsText;
+
+      const titleCounter = document.getElementById("titleCounter");
+      titleCounter.textContent = `${title.length} / ${cfg.maxTitle} kar`;
+      titleCounter.classList.toggle("warn", title.length > cfg.maxTitle);
+
+      document.getElementById("descCounter").textContent = `${description.length} kar`;
+      document.getElementById("tagCounter").textContent = `${tags.length} tag`;
+    }
+
+    function showToast(msg) {
+      const toast = document.getElementById("toast");
+      toast.textContent = msg;
+      toast.classList.add("show");
+      clearTimeout(window._toastTimer);
+      window._toastTimer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 1800);
+    }
+
+    function copyText(text, successMsg) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(() => showToast(successMsg)).catch(() => fallbackCopy(text, successMsg));
+      } else {
+        fallbackCopy(text, successMsg);
+      }
+    }
+
+    function fallbackCopy(text, successMsg) {
+      const ta = document.createElement("textarea");
+      ta.value = text;
+      ta.style.position = "fixed";
+      ta.style.opacity = "0";
+      document.body.appendChild(ta);
+      ta.select();
+      document.execCommand("copy");
+      document.body.removeChild(ta);
+      showToast(successMsg);
+    }
+
+    function copyById(elementId, successMsg) {
+      const text = document.getElementById(elementId).textContent;
+      copyText(text, successMsg);
+    }
+
+    function copyAllOutput() {
+      const title = document.getElementById("outTitle").textContent;
+      const desc = document.getElementById("outDesc").textContent;
+      const tags = document.getElementById("outTags").textContent;
+      const combined = `${title}\n\n${desc}\n\n${tags}`;
+      copyText(combined, "Semua bagian berhasil disalin");
+    }
+
+    document.addEventListener("DOMContentLoaded", generateSEO);
   </script>
+
 </body>
 </html>
